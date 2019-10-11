@@ -1,0 +1,81 @@
+package com.yain;
+
+rule "student's grade between 90 and 100"    // 给规则取个名
+when
+    student : Grade( 90 <= grade && grade <= 100)     // 规则
+then
+    // 符合规则后执行的操作，是Java代码
+    student.setLevel("A");
+    System.out.println(student.getName() + "的成绩是：" +
+    student.getGrade() + ", 评级为：" + student.getLevel());
+end
+
+rule "student's grade between 87 and 89"    // 给规则取个名
+when
+    student : Grade( 87 <= grade && grade <= 89)     // 规则
+then
+    // 符合规则后执行的操作，是Java代码
+    student.setLevel("B+");
+    System.out.println(student.getName() + "的成绩是：" +
+    student.getGrade() + ", 评级为：" + student.getLevel());
+end
+
+rule "student's grade between 80 and 86"    // 给规则取个名
+when
+    student : Grade( 80 <= grade && grade <= 86)     // 规则
+then
+    // 符合规则后执行的操作，是Java代码
+    student.setLevel("B");
+    System.out.println(student.getName() + "的成绩是：" +
+    student.getGrade() + ", 评级为：" + student.getLevel());
+end
+
+rule "student's grade between 77 and 79"    // 给规则取个名
+when
+    student : Grade( 77 <= grade && grade <= 79)     // 规则
+then
+    // 符合规则后执行的操作，是Java代码
+    student.setLevel("C+");
+    System.out.println(student.getName() + "的成绩是：" +
+    student.getGrade() + ", 评级为：" + student.getLevel());
+end
+
+rule "student's grade between 70 and 76"    // 给规则取个名
+when
+    student : Grade( 70 <= grade && grade <= 76)     // 规则
+then
+    // 符合规则后执行的操作，是Java代码
+    student.setLevel("C");
+    System.out.println(student.getName() + "的成绩是：" +
+    student.getGrade() + ", 评级为：" + student.getLevel());
+end
+
+rule "student's grade between 67 and 69"    // 给规则取个名
+when
+    student : Grade( 67 <= grade && grade <= 69)     // 规则
+then
+    // 符合规则后执行的操作，是Java代码
+    student.setLevel("D+");
+    System.out.println(student.getName() + "的成绩是：" +
+    student.getGrade() + ", 评级为：" + student.getLevel());
+end
+
+rule "student's grade between 60 and 66"    // 给规则取个名
+when
+    student : Grade( 60 <= grade && grade <= 66)     // 规则
+then
+    // 符合规则后执行的操作，是Java代码
+    student.setLevel("D");
+    System.out.println(student.getName() + "的成绩是：" +
+    student.getGrade() + ", 评级为：" + student.getLevel());
+end
+
+rule "student's grade between 0 and 59"     // 给规则取个名
+when
+    student : Grade( 0 <= grade && grade <= 59)      // 规则
+then
+    // 符合规则后执行的操作，是Java代码
+    student.setLevel("F");
+    System.out.println(student.getName() + "的成绩是：" +
+    student.getGrade() + ", 评级为：" + student.getLevel());
+end

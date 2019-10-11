@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+plugins {
+    id 'application'
+}
+
+mainClassName = 'com.yain.Main'
+
+group 'com.yain'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.kie', name: 'kie-api', version: '7.5.0.Final'
+    compile group: 'org.drools', name: 'drools-compiler', version: '7.5.0.Final'
+    compile group: 'org.slf4j', name: 'slf4j-nop', version: '1.7.25'
+}
